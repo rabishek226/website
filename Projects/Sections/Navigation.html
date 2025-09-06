@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stellar Marketing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    /* Custom gradient text */
+    .text-gradient {
+      background: linear-gradient(135deg, #3b82f6, #22c55e);
+      background-clip : text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="/" class="flex items-center space-x-2 font-bold text-xl">
+          <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
+            <i data-feather="zap" class="w-5 h-5 text-white"></i>
+          </div>
+          <span class="text-gradient">Stellar Marketing</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/" class="font-medium text-blue-600">Home</a>
+          <a href="/Sections/about.html" class="font-medium text-gray-600 hover:text-blue-600">About</a>
+          <a href="/services" class="font-medium text-gray-600 hover:text-blue-600">Services</a>
+          <a href="/portfolio" class="font-medium text-gray-600 hover:text-blue-600">Portfolio</a>
+          <a href="/blog" class="font-medium text-gray-600 hover:text-blue-600">Blog</a>
+          <a href="/contact" class="font-medium text-gray-600 hover:text-blue-600">Contact</a>
+          <button class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold hover:opacity-90 transition">
+            Book Consultation
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-100">
+        <div class="flex flex-col space-y-4">
+          <a href="/" class="font-medium text-blue-600">Home</a>
+          <a href="/about" class="font-medium text-gray-600 hover:text-blue-600">About</a>
+          <a href="/services" class="font-medium text-gray-600 hover:text-blue-600">Services</a>
+          <a href="/portfolio" class="font-medium text-gray-600 hover:text-blue-600">Portfolio</a>
+          <a href="/blog" class="font-medium text-gray-600 hover:text-blue-600">Blog</a>
+          <a href="/contact" class="font-medium text-gray-600 hover:text-blue-600">Contact</a>
+          <button class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold hover:opacity-90 transition w-fit">
+            Book Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="p-10 text-center">
+    <h1 class="text-4xl font-bold">Welcome to Stellar Marketing</h1>
+    <p class="mt-4 text-lg">This is a plain HTML version of the navigation.</p>
+  </div>
+  <div id="footer-container"></div>
+
+  <script>
+    feather.replace();
+
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      // Toggle icon
+      const icon = btn.querySelector('i');
+      icon.dataset.feather = menu.classList.contains('hidden') ? 'menu' : 'x';
+      feather.replace();
+    });
+  </script>
+</body>
+</html>

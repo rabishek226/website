@@ -1,0 +1,102 @@
+    html{
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+    }
+    body { 
+        font-family: 'Inter', 
+        sans-serif; 
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+    }
+    .hero-section{
+      background: linear-gradient(to bottom right, #ffffff, #e0f7ff, #e0ffe0);
+      padding : 80px 0;
+    }
+    .hero-container{
+        margin-top:100px;
+    }
+    .cta-section{
+        padding : 40px 0;
+    }
+    .cta-container{
+        margin-top : 20px;
+    }
+    .icon{
+        width:50px;
+        height: 50px;
+    }
+    .bg-gradient{
+        background: linear-gradient(135deg,#3b82f6,#10b981);
+    }
+    .text-gradient { 
+        background: linear-gradient(135deg,#3b82f6,#10b981); 
+        background-clip : text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    .btn-gradient { 
+        background: linear-gradient(90deg,#10b981,#3b82f6); 
+        color: #fff; 
+        font-weight: 600; 
+    }
+    .card-glow { 
+        box-shadow: 0 10px 30px rgba(59,130,246,0.2);
+        border-radius: 1rem; 
+    }
+    .card-glow:hover{ 
+        scale: (1.05); 
+        box-shadow: 0 10px 30px rgba(59,130,246,0.3);
+    }
+    .badge-gradient { 
+        background: linear-gradient(90deg,#3b82f6,#10b981); 
+        color: #fff; 
+        font-weight: 600; 
+        padding: 0.4rem 0.8rem; 
+        border-radius: 1rem; 
+    }
+    .feature-item::before { 
+        content: "."; 
+        margin-right: 0.5rem; 
+        color: #10b981; 
+    }
+    .step-circle { 
+        width: 60px; 
+        height: 60px; 
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        color: #fff; 
+        font-weight: bold; 
+        margin: 0 auto; 
+        background: linear-gradient(90deg,#3b82f6,#10b981); 
+    }
+    .step-line { 
+        height: 4px; 
+        background: linear-gradient(90deg,#3b82f6,#10b981); 
+        margin: 0 auto; 
+        opacity: 0.3; 
+    }
+    .logo-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #3b82f6, #10b981);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #3b82f6, #10b981);
+    background-clip : text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn-gradient {
+    background: linear-gradient(90deg, #10b981, #3b82f6);
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s;
+  }
+  .btn-gradient:hover {
+    opacity: 0.9;
+  }
