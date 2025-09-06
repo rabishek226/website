@@ -74,10 +74,10 @@
     <!-- Navigation Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a href="/index.html" class="nav-link text-secondary">Home</a></li>
-        <li class="nav-item"><a href="/Sections/about.html" class="nav-link text-secondary">About</a></li>
-        <li class="nav-item"><a href="/Sections/services.html" class="nav-link text-secondary">Services</a></li>
-        <li class="nav-item"><a href="/Sections/portfolio.html" class="nav-link text-secondary">Portfolio</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-secondary">Home</a></li>
+        <li class="nav-item"><a href="Sections/about.html" class="nav-link text-secondary">About</a></li>
+        <li class="nav-item"><a href="Sections/services.html" class="nav-link text-secondary">Services</a></li>
+        <li class="nav-item"><a href="Sections/portfolio.html" class="nav-link text-secondary">Portfolio</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link active text-primary">Contact</a></li>
         <li class="nav-item ms-lg-3">
           <button class="btn btn-primary fw-semibold">
@@ -179,7 +179,7 @@
           <div class="card card-glow p-3 mb-3">
             <div class="d-flex align-items-center">
               <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient">
-                 <img src="/images/mail.svg">
+                 <img src="images/mail.svg">
               </div>
               <div>
                 <h5>Email Us</h5>
@@ -191,7 +191,7 @@
 
           <div class="card card-glow p-3 mb-3">
             <div class="d-flex align-items-center">
-              <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient"><img src="/images/linkedin.svg"></div>
+              <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient"><img src="images/linkedin.svg"></div>
               <div>
                 <h5>Linkedin</h5>
                 <a href = "https://www.linkedin.com/company/twinkling-marketing"><p class="mb-0 text-primary">Twinkling Marketing</p></a>
@@ -201,7 +201,7 @@
 
           <div class="card card-glow p-3 mb-3">
             <div class="d-flex align-items-center">
-              <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient"><img src="/images/instagram.svg"></div>
+              <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient"><img src="images/instagram.svg"></div>
               <div>
                 <h5>Instagram</h5>
                 <p class="mb-0 text-primary">+1 (555) 123-4567</p>
@@ -219,7 +219,7 @@
  <div id="footer-placeholder"></div>
   <script>
     // Load footer.html and insert into placeholder
-    fetch("/sections/footer.html")
+    fetch("Sections/footer.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer-placeholder").innerHTML = data;
@@ -243,3 +243,4 @@
 </script>  
 </body>
 </html>
+
