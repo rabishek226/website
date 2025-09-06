@@ -117,13 +117,13 @@
     <!-- Navigation Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a href="/index.html" class="nav-link text-secondary">Home</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-secondary">Home</a></li>
         <li class="nav-item"><a href="#about" class="nav-link active text-primary">About</a></li>
-        <li class="nav-item"><a href="/Sections/services.html" class="nav-link text-secondary">Services</a></li>
-        <li class="nav-item"><a href="/Sections/portfolio.html" class="nav-link text-secondary">Portfolio</a></li>
-        <li class="nav-item"><a href="/Sections/contact.html" class="nav-link text-secondary">Contact</a></li>
+        <li class="nav-item"><a href="Sections/services.html" class="nav-link text-secondary">Services</a></li>
+        <li class="nav-item"><a href="Sections/portfolio.html" class="nav-link text-secondary">Portfolio</a></li>
+        <li class="nav-item"><a href="Sections/contact.html" class="nav-link text-secondary">Contact</a></li>
         <li class="nav-item ms-lg-3">
-          <button class="btn btn-primary fw-semibold" onclick = "window.location.href = '/sections/contact.html'">
+          <button class="btn btn-primary fw-semibold" onclick = "window.location.href = 'Sections/contact.html'">
             Book Consultation
           </button>
         </li>
@@ -163,14 +163,14 @@
     <div class="row g-4">
         <div class="col-lg-3">
           <div class="card card-glow p-3 text-center">
-            <div class="step-circle mb-3"><img src = "/images/target.svg"></div>
+            <div class="step-circle mb-3"><img src = "images/target.svg"></div>
             <h5 class="fw-bold mb-3">Result Driven</h5>
             <p class="text-muted small">Every strategy we implement is designed to deliver measurable business outcomes.</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="card card-glow p-3 text-center">
-            <div class="step-circle mb-3"><img src="/images/heart.svg"></div>
+            <div class="step-circle mb-3"><img src="images/heart.svg"></div>
             <h5 class="fw-bold mb-3">Client-Focused</h5>
             <p class="text-muted small">Your success is our success. We build lasting partnerships based on trust and results.</p>
           </div>
@@ -184,7 +184,7 @@
         </div>
         <div class="col-lg-3">
           <div class="card card-glow p-3 text-center">
-            <div class="step-circle mb-3"><img src = "/images/award.svg"></div>
+            <div class="step-circle mb-3"><img src = "images/award.svg"></div>
             <h5 class="fw-bold mb-3">Excellence</h5>
             <p class="text-muted small">We maintain the high standards, from strategy to execution.</p>
           </div>
@@ -232,13 +232,13 @@
   <div class="container">
     <h2 class="display-5 fw-bold">Ready to Work Together?</h2>
     <p class="lead mt-3 mb-4">Let's discuss how our team can help your business achieve its digital marketing goals.</p>
-    <button class="btn btn-neon btn-lg" onclick = "window.location.href = '/sections/contact.html'">Get in Touch ⚡</button>
+    <button class="btn btn-neon btn-lg" onclick = "window.location.href = 'Sections/contact.html'">Get in Touch ⚡</button>
   </div>
 </section>
  <div id="footer-placeholder"></div>
 <script>
     // Load footer.html and insert into placeholder
-    fetch("/sections/footer.html")
+    fetch("Sections/footer.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer-placeholder").innerHTML = data;
@@ -264,3 +264,4 @@
 </script>  
 </body>
 </html>
+
