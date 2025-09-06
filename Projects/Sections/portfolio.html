@@ -96,13 +96,13 @@
     <!-- Navigation Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a href="/index.html" class="nav-link text-secondary">Home</a></li>
-        <li class="nav-item"><a href="/Sections/about.html" class="nav-link text-secondary">About</a></li>
-        <li class="nav-item"><a href="/Sections/services.html" class="nav-link text-secondary">Services</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-secondary">Home</a></li>
+        <li class="nav-item"><a href="Sections/about.html" class="nav-link text-secondary">About</a></li>
+        <li class="nav-item"><a href="Sections/services.html" class="nav-link text-secondary">Services</a></li>
         <li class="nav-item"><a href="#portfolio" class="nav-link active text-primary">Portfolio</a></li>
-        <li class="nav-item"><a href="/Sections/contact.html" class="nav-link text-secondary">Contact</a></li>
+        <li class="nav-item"><a href="Sections/contact.html" class="nav-link text-secondary">Contact</a></li>
         <li class="nav-item ms-lg-3">
-          <button class="btn btn-primary fw-semibold" onclick = "window.location.href = '/sections/contact.html'">
+          <button class="btn btn-primary fw-semibold" onclick = "window.location.href = 'Sections/contact.html'">
             Book Consultation
           </button>
         </li>
@@ -250,7 +250,7 @@
       <h2 class="display-5 fw-bold mb-3">Ready to Become Our Next Success Story?</h2>
       <p class="mb-4">Let's discuss how we can help you achieve similar results for your business.</p>
       <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-        <button class="btn btn-outline-light px-4 py-2" onclick ="window.location.href='/sections/contact.html'">Schedule Consultation</button>
+        <button class="btn btn-outline-light px-4 py-2" onclick ="window.location.href='Sections/contact.html'">Schedule Consultation</button>
       </div>
     </div>
   </section>
@@ -259,7 +259,7 @@
 
   <script>
     // Load footer.html and insert into placeholder
-    fetch("/sections/footer.html")
+    fetch("Sections/footer.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("footer-placeholder").innerHTML = data;
@@ -285,3 +285,4 @@
 </script>  
 </body>
 </html>
+
